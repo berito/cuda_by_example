@@ -30,6 +30,7 @@ int main( void ) {
     HANDLE_ERROR( cudaMemcpy( &c, dev_c, sizeof(int),
                               cudaMemcpyDeviceToHost ) );
     printf( "2 + 7 = %d\n", c );
+    
     HANDLE_ERROR( cudaFree( dev_c ) );
 
     return 0;
